@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPRESSÃO</title>
+
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/styleHome.css">
+</head>
+<body>
+    <script src="recibo.js"></script>
+    <header class="cabecalho">
+        <!-- <nav class='cabecalho_menu'>
+            <a class="btn_menu" href="./index.html">Home</a>
+            <a class="btn_menu" href="./sobreMim.html">Sobre Mim</a>
+            <a class="btn_menu" href="./curriculo.html">Currículo</a>
+        </nav> -->
+    </header>
+        <main class="principal">
+            <section class="painel_txt">
+                <div class="txt">
+                    <div class="txt__impressao_cabe">
+                        <div><h1> <strong>RECIBO</strong></h1></div>
+                            <div><h4><strong>Nº:</strong> <a id="numRecCabe"></a></h4>
+                            <h4><strong>VALOR: </strong>R$ <a id="valorCabe"></a></h4>
+                        </div>
+                        
+                    </div>
+                    <div class="txt__impressao">
+                        Eu, <strong id="nom1"></strong> Portador(a) do meu , CPF nº</br>
+                        <strong id="cpf1"></strong>, Declaro ter recebido nesta data a quantia de: R$ <strong id="valor"></strong></br>
+                        de <strong id="nom2"></strong>, Portador(a) do, CPF nº</br>
+                        <strong id="cpf2"></strong>, Referente (<strong id="referente"></strong>).</br>
+
+                        E para maior clareza, afirmo o presente.</br>
+
+                        <strong id="cidade"></strong>, <strong id="data"></strong>.</br>
+                        _________________________</br>
+                        <strong id="nomAssina"></strong></br>
+                    </div>
+                </div>
+                <div class="acesso"> 
+                    
+                    
+                    <a class="btn_redes">
+                        <input class="invisivel" type="button" value="GERAR" onclick="recibo()">       
+                    </a>
+                    <a class="btn_redes">
+                        <input class="invisivel" type="button" value="PRINT" onclick="printTela()">
+                    </a>
+                </div>
+            </section>
+        </main>
+</body>
+
+</html>

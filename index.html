@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo -  Basico</title>
+
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/styleHome.css">
+    <link rel="import" href="impressao.html">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class='cabecalho_menu'>
+            <!-- <a class="btn_menu" href="./index.html">Home</a> -->
+            <!-- <a class="btn_menu" href="./sobreMim.html">Sobre Mim</a> -->
+            <!-- <a class="btn_menu" href="./curriculo.html">Currículo</a> -->
+        </nav>
+    </header>
+        <main class="principal">
+            <section class="painel_txt">
+                <div class="campos">
+                    <h2>RECIBO</h2>
+                    <h2>DADOS DECLARANTE</h2>
+                    Nome Desclarante: <input type="text" name="nomeAdc" id = "nomeAdc"></br>
+                    Cidade: <input type="text" name="cidadeAdc" id = "cidadeAdc"></br>
+                    CPF: <input oninput="mascara(this)" type="text" name="cpfDeclAdc" id = "cpfDeclAdc">
+                    Nº Recibo: <input type="number" name="numRecAdc" id = "numRecAdc"></br>
+                    Valor: <input type="number" name="valorAdc" id = "valorAdc" step="0.01" min="0"></br>
+                    Referente: <input type="text" name="referenteAdc" id = "referenteAdc"></br>
+                    Data<input type="date" name="dataAdc" id = "dataAdc"></br>
+
+                    <h2>DADOS DO DECLARADO</h2>
+                    Seu nome: <input type="text" name="nomeDecAdc" id = "nomeDecAdc"></br>
+                    CPF: <input oninput="mascara(this)" type="text" name="cpfAdc" id = "cpfAdc">
+                    <div id="res"></div>
+                    <!-- <p><select name="nomes" id="selAdc" size = "5"></select></p> -->
+                </div>
+                <!-- <div class="txt">
+                    <h2>RECIBO</h2>
+                    <p class="txt__sobremim">
+                        Como notado, estou iniciando na carreira de desenvolvimento  
+                        Front-End, atualmente trabalho como Analista de Sistemas Jr, na 
+                        empresa Queiroz, localizada no estado do Amazonas, informações 
+                        para contato pode ser encontrada na aba “Currículo”. Estou em 
+                        busca de aperfeiçoar meus conhecimentos, com <strong class="linguagem">HTML, CSS e JavaScript!</strong>
+                    </p>
+                </div> -->
+                <div class="acesso"> 
+                        <!-- <h3 class="acesse_txt">IR PARA TELA DE IMPRESSÃO</h3> -->
+                        <a class="btn_redes" >
+                            <input class="invisivel" type="button" value="IMPRESSÃO" onclick="gerar()" >
+                            <!-- <img src="./assests/instagram.png"> -->
+                            <!-- IMPRESSÃO -->
+                        </a>
+                        <!-- <a class="btn_redes" href="https://www.linkedin.com/feed/">
+                            <img src="./assests/linkedin.png">
+                            Linkedin
+                        </a>
+                        <a class="btn_redes" href="https://github.com">
+                            <img src="./assests/github.png">
+                            GitHub
+                        </a> -->
+                </div>
+            </section>
+            
+            <!-- <section class="foto_fundo"> -->
+                <!-- <img class="foto" src="./assests/img.jpg" alt="pc gamer"> -->
+            <!-- </section> -->
+        </main>
+</body>
+<footer class="rodape teste">GERADOR DE RECIBO</footer>
+<script src="recibo.js"></script>
+</html>
